@@ -16,4 +16,13 @@ public class RectangleTest {
 
         assertThat(rectangle.area(), is(equalTo(twenty)));
     }
+
+    @Test
+    void toReturnEighteenAsPerimeterWhenLengthIsFiveAndBreadthIsFour() {
+
+        int four = 4, five = 5, eighteen = 18;
+        Rectangle rectangle = new Rectangle(five, four);
+
+        assertThat(rectangle.perimeter(), is(equalTo(eighteen)));
+    }
 }
