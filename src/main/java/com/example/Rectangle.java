@@ -2,7 +2,14 @@ package com.example;
 
 public class Rectangle {
 
-    public int area(int length, int breadth) {
+    int length, breadth;
+
+    public Rectangle(int length, int breadth) {
+        this.length = length;
+        this.breadth = breadth;
+    }
+
+    public int area() {
         return length * breadth;
     }
 }

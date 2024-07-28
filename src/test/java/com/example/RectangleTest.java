@@ -12,8 +12,8 @@ public class RectangleTest {
     void toReturnTwentyAsAreaWhenLengthIsFiveAndBreadthIsFour() {
 
         int four = 4, five = 5, twenty = 20;
-        Rectangle rectangle = new Rectangle();
+        Rectangle rectangle = new Rectangle(five, four);
 
-        assertThat(rectangle.area(five, four), is(equalTo(twenty)));
+        assertThat(rectangle.area(), is(equalTo(twenty)));
     }
 }
